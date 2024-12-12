@@ -1,0 +1,319 @@
+/* Базові стилі */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background: #fff;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Верхній бар */
+.top-bar {
+    background: #f9f9f9;
+    font-size: 13px;
+    color: #444;
+    border-bottom: 1px solid #eee;
+    line-height: 40px;
+}
+
+.top-bar-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-info .language-switch {
+    border-left: 1px solid #ccc;
+    padding-left: 15px;
+}
+
+/* Шапка сайту */
+.header {
+    background: #fff;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo img {
+    height: 300px; 
+    width: auto;
+    object-fit: contain;
+}
+
+/* Пошукова панель */
+.search-bar {
+    position: relative;
+    flex: 1;
+    max-width: 500px;
+    margin: 0 40px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.search-button {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #007bff;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    padding: 0 15px;
+    height: 32px;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.search-button:hover {
+    background: #0056b3;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Іконки користувача, обраного, кошика */
+.user-actions {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.user-actions a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.user-actions a:hover {
+    color: #007bff;
+}
+
+/* Навігація */
+.main-nav {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    position: relative;
+}
+
+.nav-list a {
+    font-size: 15px;
+    padding: 15px 0;
+    display: inline-block;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+    color: #007BFF;
+}
+
+/* Основний контент */
+.main-content {
+    padding: 40px 0;
+}
+
+.main-content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.main-content h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.main-content h3 {
+    font-size: 18px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.main-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.main-content a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.main-content a:hover {
+    color: #0056b3;
+}
+
+/* Сітка товарів */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.product-item {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item img {
+    max-height: 150px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
+
+.product-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+.product-item p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.product-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Кнопка "Детальніше" */
+.buy-button {
+    display: inline-block;
+    background: #007bff;
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+.buy-button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    color: #fff !important;
+}
+
+/* Футер */
+.footer {
+    background: #f7f7f7;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    border-top: 1px solid #eee;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar {
+        margin: 15px 0;
+        max-width: 100%;
+    }
+
+    .product-item img {
+        max-height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content h1 {
+        font-size: 28px;
+    }
+
+    .main-content p, .main-content li {
+        font-size: 15px;
+    }
+
+    .search-input {
+        font-size: 14px;
+    }
+
+    .search-button {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+}

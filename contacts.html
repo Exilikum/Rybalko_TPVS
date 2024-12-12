@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Зв’яжіться з нами: адреса, контактні телефони та форма зворотнього зв’язку для вашого комфорту." />
+    <meta name="keywords" content="контакти, адреса, телефон, форма, зворотній зв’язок, електроніка, гаджети, аксесуари" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакти | Інтернет-магазин гаджетів та аксесуарів</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-contacts.css" />
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="contact-info">
+                <span class="phone-number">044 123 45 67</span>
+                <span class="language-switch">УКР / РУС</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="Логотип магазину" title="Логотип магазину"></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Пошук..." class="search-input" />
+                <button class="search-button">🔍 Пошук</button>
+            </div>
+            <div class="user-actions">
+                <a href="profile.html" class="user-link">Профіль</a>
+                <a href="wishlist.html" class="wishlist-link">Обрані</a>
+                <a href="cart.html" class="cart-link">Кошик</a>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <div class="container nav-container">
+                <ul class="nav-list">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="contacts.html" class="active">Контакти</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="resources.html">Корисні ресурси</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content container">
+        <h1>Зв’яжіться з нами</h1>
+        <p>Ми завжди раді допомогти вам у виборі найкращої електроніки, гаджетів та аксесуарів. Якщо у вас виникли питання, пропозиції чи зауваження — будь ласка, скористайтеся контактною інформацією нижче або формою для зворотного зв’язку.</p>
+
+        <div class="contact-details">
+            <h2>Наша адреса</h2>
+            <p>м. Київ, вул. Електроніки, 12<br>Пн-Пт: 9:00 – 19:00<br>Сб-Нд: 10:00 – 17:00</p>
+
+            <h2>Телефони</h2>
+            <p>+380 44 123 45 67<br>+380 67 890 12 34</p>
+
+            <h2>Email</h2>
+            <p>info@gadgetstore.ua</p>
+        </div>
+
+        <h2>Форма зворотного зв’язку</h2>
+        <form class="contact-form" action="#" method="post">
+            <label for="name">Ім’я:</label>
+            <input type="text" id="name" name="name" placeholder="Ваше ім’я" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required>
+
+            <label for="message">Повідомлення:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ваше повідомлення..." required></textarea>
+
+            <button type="submit" class="submit-button">Надіслати</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>© 2024 TechnoVerse. Всі права захищено.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
